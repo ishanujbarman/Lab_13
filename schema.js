@@ -1,10 +1,11 @@
-const mongoose = require("mongoose");
+// import mongoose from 'mongoose';
+const mongoose = require("mongoose")
 const { Schema } = mongoose;
 
-const studentSchema = new Schema({
-    name:  String,
-    regno: Number,
-    marks: Number
+const appSchema = new Schema({
+student_name:  String, 
+reg_no: String,
+marks: String
 });
 
-module.exports = mongoose.model("myStudent", studentSchema, "SL-Lab-13")
+module.exports = mongoose.model("data-schema",appSchema,"student-db")
