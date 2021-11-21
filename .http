@@ -1,0 +1,8 @@
+POST http://localhost:3001/add-new-post
+
+Content-Type: application/json
+{
+    "name" : "Ishanuj Barman",
+    "regno" : 201900376,
+    "marks" : 50
+}
